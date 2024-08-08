@@ -1,0 +1,27 @@
+* {
+    /* Incluir el padding y el border en el calculo del tamaño de los elementos de bloque */
+    box-sizing: border-box;
+
+    /* Para que la posicion de los hijos siempre este basada en el padre inmediato */
+    position: relative;
+
+    /* Evitar problemas con Grid y con Flex con sus contenedores, con los elementos dentro del contenedor */
+    min-width: 0;
+}
+
+body {
+    /* 100dvh: Maxima altura dinamica disponible, dynamic viewport height */
+    min-height: 100dvh;
+}
+
+h1, h2, h3, h4 {
+    /* Para que balance el texto del titulo, y no quede una palabra suelta */
+    /* Esta pensado mas para titulos */
+    text-wrap: balance;
+}
+
+p {
+    /* Ajusta todo el texto para que no quede una palabra suelta */
+    /* Esta mas enfocado para parrafos con varias lineas */
+    text-wrap: pretty;
+}
